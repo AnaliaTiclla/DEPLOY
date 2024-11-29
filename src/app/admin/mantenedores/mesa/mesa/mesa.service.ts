@@ -10,7 +10,7 @@ import { MesaModelModel } from './mesa-model';
   providedIn: 'root'
 })
 export class MesaService {
-  private URL_API: string = 'http://localhost:8080/admin/mesa';
+  private URL_API: string = '${API}/admin/mesa';
   private http = inject(HttpClient);
 
   getMesa(): Observable<MesaModelModel[]> {

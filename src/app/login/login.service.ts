@@ -21,7 +21,7 @@ interface LoginResponse {
   providedIn: 'root'
 })
 export class LoginService {
-  private apiURL = 'http://localhost:8080/login';
+  private apiURL = '${API}/login';
 
   // Headers para especificar que enviamos JSON
   private httpOptions = {

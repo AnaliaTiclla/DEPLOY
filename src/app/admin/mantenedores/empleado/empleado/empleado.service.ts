@@ -9,7 +9,7 @@ import { EmpleadoModelModel } from './empleado-model';
   providedIn: 'root'
 })
 export class EmpleadoService {
-  private URL_API: string = 'http://localhost:8080/admin/empleado';
+  private URL_API: string = '${API}/admin/empleado';
   private http = inject(HttpClient);
 
   getEmpleado(): Observable<EmpleadoModelModel[]> {

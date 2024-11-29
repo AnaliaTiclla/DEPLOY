@@ -8,7 +8,7 @@ import { SubcategoriaModel } from './subcategoria-model';
   providedIn: 'root'
 })
 export class SubcategoriaService {
-  private URL_API: string = 'http://localhost:8080/admin/subcategoria';
+  private URL_API: string = '${API}/admin/subcategoria';
   private http = inject(HttpClient);
 
   getSubcategoria(): Observable<SubcategoriaModel[]> {

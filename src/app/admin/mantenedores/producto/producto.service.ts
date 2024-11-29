@@ -7,7 +7,7 @@ import { ProductoModel } from './producto-model';
   providedIn: 'root'
 })
 export class ProductoService {
-  private URL_API: string = 'http://localhost:8080/admin/producto';
+  private URL_API: string = '${API}/admin/producto';
   private http = inject(HttpClient);
 
   getProducto(): Observable<ProductoModel[]> {

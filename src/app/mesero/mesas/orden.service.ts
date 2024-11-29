@@ -8,7 +8,7 @@ import { OrdenDetalleModel } from './distribucion-mesas/ordenDetalle-model';
   providedIn: 'root'
 })
 export class OrdenService {
-  private URL_API: string = 'http://localhost:8080/mozo';
+  private URL_API: string = '${API}/mozo';
   private http = inject(HttpClient);
 
   getOrdenAntiguo(mesaid: number): Observable<OrdenModel> {
