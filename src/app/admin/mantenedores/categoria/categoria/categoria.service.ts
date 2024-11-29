@@ -9,7 +9,7 @@ import { CategoriaModelModel } from './categoria-model';
   providedIn: 'root'
 })
 export class CategoriaService {
-  private URL_API: string = 'http://localhost:8080/admin/categoria';
+  private URL_API: string = '${API}/admin/categoria';
   private http = inject(HttpClient);
 
   getCategoria(): Observable<CategoriaModelModel[]> {
